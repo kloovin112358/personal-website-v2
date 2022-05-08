@@ -72,7 +72,7 @@ function App() {
               <Pulse forever duration={7000}>Kevin Lauer</Pulse>
             </Fade>
           </p>
-          <Fade top delay={4500}><Jump forever delay={5500}><br></br><p className="display-5"><i className="bi bi-arrow-down-circle"></i></p></Jump></Fade>
+          <Fade top delay={4500}><Jump forever delay={6500}><br></br><p className="display-5"><i className="bi bi-arrow-down-circle"></i></p></Jump></Fade>
           {/* <Fade left delay={3500}><p className="display-6 badgeParagraph">
             and boy do I have the opportunity for you!
             i created a
@@ -192,6 +192,42 @@ function App() {
             <div className="py-5">
             <Fade bottom>
             <p className="display-3 fw-bold mt-5">here's where i worked</p>
+            </Fade>
+            </div>
+          </div>
+        </div>
+        <div className="bg-primary">
+          <div className="container text-white">
+            <div className="py-5">
+            <Fade bottom>
+            <p className="display-3 fw-bold mt-5">here are some sites i made</p>
+            </Fade>
+            </div>
+          </div>
+        </div>
+        <div className="bg-secondary">
+          <div className="container text-white">
+            <div className="py-5">
+            <Fade bottom>
+            <p className="display-3 fw-bold mt-5">here are some other things i did</p>
+            </Fade>
+            </div>
+          </div>
+        </div>
+        <div className="bg-success">
+          <div className="container text-white">
+            <div className="py-5">
+            <Fade bottom>
+            <p className="display-3 fw-bold mt-5">here's where i went to school</p>
+            </Fade>
+            </div>
+          </div>
+        </div>
+        <div className="bg-primary">
+          <div className="container text-white">
+            <div className="py-5">
+            <Fade bottom>
+            <p className="display-3 fw-bold mt-5">send me a fax</p>
             </Fade>
             </div>
           </div>
