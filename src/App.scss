@@ -5,5 +5,16 @@ $theme-colors: (
     "warning": #fac05e,
     "secondary": #f79d84
 );
-
+$display-font-sizes: (
+    0: 10rem,
+);
+$font-family-sans-serif: (
+    "Open Sans", sans-serif
+);
+.badgeParagraph {
+    line-height: 1.6;
+}
+.topContainer{
+    min-height:100vh;
+}
 @import "~bootstrap/scss/bootstrap";
