@@ -8,7 +8,10 @@ import Particles from "react-tsparticles";
 import Pulse from 'react-reveal/Pulse';
 import Jump from 'react-reveal/Jump';
 import Accordion from 'react-bootstrap/Accordion';
-
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 
 function App() {
@@ -110,7 +113,7 @@ function App() {
         <div className="container text-white">
           <div className="py-5">
           <Fade bottom cascade>
-            <p className="display-3 fw-bold mt-5">here's what i can do</p>
+            <p className="display-3 fw-bold mt-5 mb-4">here's what i can do</p>
             <Accordion className="text-dark mb-5" defaultActiveKey={['0', '1', '2', '3']} alwaysOpen>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>Programming Languages</Accordion.Header>
@@ -191,7 +194,65 @@ function App() {
           <div className="container text-white">
             <div className="py-5">
             <Fade bottom>
-            <p className="display-3 fw-bold mt-5">here's where i worked</p>
+              <p className="display-3 fw-bold mt-5">here's where i worked</p>
+              <VerticalTimeline className="mt-5" layout={'1-column-left'}>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work lead"
+                  contentStyle={{ background: '#7209b7', color: '#fff' }}
+                  contentArrowStyle={{ borderRight: '7px solid  #7209b7' }}
+                  date="May 2022 - August 2022"
+                  iconStyle={{ background: '#7209b7', color: '#fff' }}
+                  // icon={<i className="bi bi-briefcase text-center"></i>}
+                >
+                  <h1 className="vertical-timeline-element-title"><strong>Software Development Intern, Web</strong></h1>
+                  <h4 className="vertical-timeline-element-subtitle mt-2"><strong className="text-danger">Uline</strong> | Pleasant Prairie, WI</h4>
+                  <p>
+                    Offer accepted, starting in late May.
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work lead"
+                  contentStyle={{ background: '#3a0ca3', color: '#fff' }}
+                  contentArrowStyle={{ borderRight: '7px solid  #3a0ca3' }}
+                  date="December 2020 - May 2022"
+                  iconStyle={{ background: '#3a0ca3', color: '#fff' }}
+                  // icon={<i className="bi bi-briefcase text-center"></i>}
+                >
+                  <h1 className="vertical-timeline-element-title"><strong>Web Developer</strong></h1>
+                  <h4 className="vertical-timeline-element-subtitle mt-2"><strong className="text-danger">Caterpillar</strong> | East Peoria, IL</h4>
+                  <p>
+                    TODO
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work lead"
+                  contentStyle={{ background: '#4cc9f0', color: '#fff' }}
+                  contentArrowStyle={{ borderRight: '7px solid  #4cc9f0' }}
+                  date="October 2020 - December 2020"
+                  iconStyle={{ background: '#4cc9f0', color: '#fff' }}
+                  // icon={<i className="bi bi-briefcase text-center"></i>}
+                >
+                  <h1 className="vertical-timeline-element-title"><strong>Data Analytics Intern</strong></h1>
+                  <h4 className="vertical-timeline-element-subtitle mt-2"><strong className="text-secondary">Caterpillar</strong> | Morton, IL</h4>
+                  <p>
+                    TODO
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work lead"
+                  contentStyle={{ background: '#7209b7', color: '#fff' }}
+                  contentArrowStyle={{ borderRight: '7px solid  #7209b7' }}
+                  date="March 2020 - October 2020"
+                  iconStyle={{ background: '#7209b7', color: '#fff' }}
+                  // icon={<i className="bi bi-briefcase text-center"></i>}
+                >
+                  <h1 className="vertical-timeline-element-title"><strong>Industrial Engineering Intern</strong></h1>
+                  <h4 className="vertical-timeline-element-subtitle mt-2"><strong className="text-danger">Synergetic Industries</strong> | Morton, IL</h4>
+                  <p>
+                    TODO
+                  </p>
+                </VerticalTimelineElement>
+              </VerticalTimeline>
             </Fade>
             </div>
           </div>
@@ -215,10 +276,42 @@ function App() {
           </div>
         </div>
         <div className="bg-success">
-          <div className="container text-white">
+          <div className="container">
             <div className="py-5">
-            <Fade bottom>
-            <p className="display-3 fw-bold mt-5">here's where i went to school</p>
+            <Fade bottom cascade>
+            <p className="display-3 fw-bold mt-5 mb-4 text-white">here's where i went to school</p>
+            <div className="row pb-5">
+                <div class='col-md mb-md-0 mb-3'>
+                  <Card>
+                    <Card.Header>
+                    <div class='d-flex w-100 justify-content-between'>
+                      <h3>Bradley University</h3>
+                      <span class='lead'>2019 - 2022</span>
+                    </div>
+                    </Card.Header>
+                    <Card.Body className="lead">
+                    <span className="fw-bold">Degree</span>: Bachelor's of Science in Industrial Engineering, Supply Chain Analytics Concentration <u>(ABET Accredited)</u>
+                    <br></br><br></br>
+                    <span className="fw-bold">Organizations</span>: Disc Golf Club (president), Symphonic Orchestra, Symphonic Winds, Basketball Band, Table Tennis Club, Tennis Club
+                    <br></br><br></br>
+                    <span className="fw-bold">GPA</span>: 3.92
+                    </Card.Body>
+                  </Card>
+                </div>
+                <div class='col-md'>
+                  <Card>
+                    <Card.Header>
+                    <div class='d-flex w-100 justify-content-between'>
+                      <h3>Morton High School</h3>
+                      <span class='lead'>2015 - 2019</span>
+                    </div>
+                    </Card.Header>
+                    <Card.Body className="lead">
+                      It wasn't as dramatic as the movies.
+                    </Card.Body>
+                  </Card>
+                </div>
+              </div>
             </Fade>
             </div>
           </div>
@@ -226,8 +319,17 @@ function App() {
         <div className="bg-primary">
           <div className="container text-white">
             <div className="py-5">
-            <Fade bottom>
-            <p className="display-3 fw-bold mt-5">send me a fax</p>
+            <Fade bottom cascade>
+              <p className="display-3 fw-bold mt-5">send me a fax</p>
+              <p className="display-6 mt-5">
+                <i class="bi bi-envelope-fill"></i> <a className="text-white" href='mailto:kevin.lauer2019@gmail.com'>kevin.lauer2019@gmail.com</a>
+              </p>
+              <p className="display-6 mt-2">
+                <i class="bi bi-linkedin"></i> <a className="text-white" href='https://www.linkedin.com/in/ktlauer/'>ktlauer</a>
+              </p>
+              <p className="display-6 mt-2 pb-5">
+                <i class="bi bi-github"></i> <a className="text-white" href='https://github.com/kloovin112358'>kloovin112358</a>
+              </p>
             </Fade>
             </div>
           </div>
