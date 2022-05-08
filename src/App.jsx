@@ -48,7 +48,7 @@ function App() {
               value: 15,
             },
             opacity: {
-              value: 0.25,
+              value: 0.15,
             },
             shape: {
               type: "circle",
@@ -93,15 +93,15 @@ function App() {
         <div className="py-5">
           <Fade bottom cascade>
           <p className="display-1 fw-bold mt-5">i'm a full-stack software engineer</p>
-          <p className="display-4">so essentially i google things all day</p>
+          <p className="display-4 text-success">so essentially i google things all day</p>
           </Fade>
           <Fade bottom cascade>
             <br></br><br></br><br></br><p className="display-1 fw-bold">i'm still in college</p>
-            <p className="display-4">but i'm graduating in december of 2022</p>
+            <p className="display-4 text-success">but i'm graduating in december of 2022</p>
           </Fade>
           <Fade bottom cascade>
             <br></br><br></br><br></br><p className="display-1 fw-bold">so... hire me?</p>
-            <p className="display-4">no pressure, only if <i>you</i> want to</p>
+            <p className="display-4 text-success mb-5">no pressure, only if <i>you</i> want to</p>
           </Fade>
         </div>
         </div>
@@ -111,7 +111,7 @@ function App() {
           <div className="py-5">
           <Fade bottom cascade>
             <p className="display-3 fw-bold mt-5">here's what i can do</p>
-            <Accordion className="text-dark" defaultActiveKey={['0', '1', '2', '3']} alwaysOpen>
+            <Accordion className="text-dark mb-5" defaultActiveKey={['0', '1', '2', '3']} alwaysOpen>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>Programming Languages</Accordion.Header>
                 <Accordion.Body bsPrefix={"accordionReset"}>
@@ -119,19 +119,19 @@ function App() {
                     <li className='list-group-item'>
                       <div className='d-flex w-100 justify-content-between'>
                         <div className='fw-bold'>Python</div>
-                        <span className="badge bg-primary rounded-pill">August 2019</span>
+                        <span className="badge bg-success rounded-pill">August 2019</span>
                       </div>
                     </li>
                     <li className='list-group-item'>
                       <div className='d-flex w-100 justify-content-between'>
                         <div className='fw-bold'>JavaScript</div>
-                        <span className="badge bg-secondary rounded-pill">September 2020</span>
+                        <span className="badge bg-success rounded-pill">September 2020</span>
                       </div>
                     </li>
                     <li className='list-group-item'>
                       <div className='d-flex w-100 justify-content-between'>
                         <div className='fw-bold'>Java</div>
-                        <span className="badge bg-danger rounded-pill">August 2021</span>
+                        <span className="badge bg-primary rounded-pill">August 2021</span>
                       </div>
                     </li>
                     <li className='list-group-item'>
@@ -148,13 +148,13 @@ function App() {
                 <Accordion.Body bsPrefix={"accordionReset"}>
                   <ul className='list-group list-group-flush lead'>
                     <li className='list-group-item'>
-                      <span className='fw-bold'>Backend:</span> <span className="badge bg-primary rounded-pill">Django</span> <span className="badge bg-danger rounded-pill">Django REST Framework</span> <span className="badge bg-danger rounded-pill">Flask</span> <span className="badge bg-danger rounded-pill">Node.JS</span> <span className="badge bg-danger rounded-pill">Spring Boot</span> <span className="badge bg-danger rounded-pill">ASP.NET</span>
+                      <span className='fw-bold'>Backend:</span> <span className="badge bg-success rounded-pill">Django</span> <span className="badge bg-warning rounded-pill">Django REST Framework</span> <span className="badge bg-success rounded-pill">Flask</span> <span className="badge bg-primary rounded-pill">Node.JS</span> <span className="badge bg-danger rounded-pill">Spring Boot</span> <span className="badge bg-danger rounded-pill">ASP.NET</span>
                     </li>
                     <li className='list-group-item'>
-                      <span className='fw-bold'>Frontend:</span> <span className="badge bg-primary rounded-pill">React</span> <span className="badge bg-primary rounded-pill">HTML</span> <span className="badge bg-primary rounded-pill">CSS</span> <span className="badge bg-primary rounded-pill">SASS</span> <span className="badge bg-primary rounded-pill">Bootstrap</span> <span className="badge bg-primary rounded-pill">JQuery</span> <span className="badge bg-primary rounded-pill">AJAX</span> <span className="badge bg-primary rounded-pill">Chart.JS</span>
+                      <span className='fw-bold'>Frontend:</span> <span className="badge bg-success rounded-pill">React</span> <span className="badge bg-success rounded-pill">HTML</span> <span className="badge bg-success rounded-pill">CSS</span> <span className="badge bg-warning rounded-pill">SASS</span> <span className="badge bg-success rounded-pill">Bootstrap</span> <span className="badge bg-success rounded-pill">JQuery</span> <span className="badge bg-success rounded-pill">AJAX</span> <span className="badge bg-danger rounded-pill">Chart.JS</span>
                     </li>
                     <li className='list-group-item'>
-                      <span className='fw-bold'>Miscellaneous:</span> <span className="badge bg-primary rounded-pill">Heroku</span> <span className="badge bg-primary rounded-pill">Apache</span> <span className="badge bg-primary rounded-pill">REST APIs</span> <span className="badge bg-primary rounded-pill">WebSockets</span>
+                      <span className='fw-bold'>Miscellaneous:</span> <span className="badge bg-primary rounded-pill">Heroku</span> <span className="badge bg-danger rounded-pill">Apache</span> <span className="badge bg-warning rounded-pill">REST APIs</span> <span className="badge bg-warning rounded-pill">WebSockets</span>
                     </li>
                   </ul>
                 </Accordion.Body>
@@ -164,10 +164,10 @@ function App() {
                 <Accordion.Body bsPrefix={"accordionReset"}>
                   <ul className='list-group list-group-flush lead'>
                     <li className='list-group-item'>
-                      <span className='fw-bold'>Databases:</span> <span className="badge bg-primary rounded-pill">PostgreSQL</span> <span className="badge bg-primary rounded-pill">Access</span> <span className="badge bg-primary rounded-pill">Snowflake</span>
+                      <span className='fw-bold'>Databases:</span> <span className="badge bg-success rounded-pill">PostgreSQL</span> <span className="badge bg-warning rounded-pill">Access</span> <span className="badge bg-warning rounded-pill">Snowflake</span>
                     </li>
                     <li className='list-group-item'>
-                      <span className='fw-bold'>Tools:</span> <span className="badge bg-primary rounded-pill">SQL</span> <span className="badge bg-primary rounded-pill">Excel</span> <span className="badge bg-primary rounded-pill">PowerBI</span>
+                      <span className='fw-bold'>Tools:</span> <span className="badge bg-warning rounded-pill">SQL</span> <span className="badge bg-primary rounded-pill">Excel</span> <span className="badge bg-warning rounded-pill">PowerBI</span>
                     </li>
                   </ul>
                 </Accordion.Body>
@@ -177,7 +177,7 @@ function App() {
                 <Accordion.Body>
                   
                 <div className='lead'>
-                  <span className="badge bg-primary rounded-pill">Git</span> <span className="badge bg-primary rounded-pill">GitHub</span> <span className="badge bg-primary rounded-pill">Azure DevOps</span> <span className="badge bg-primary rounded-pill">Selenium</span> <span className="badge bg-primary rounded-pill">Minitab</span> <span className="badge bg-primary rounded-pill">Simio</span> <span className="badge bg-primary rounded-pill">Creo</span> <span className="badge bg-primary rounded-pill">Solidworks</span> <span className="badge bg-primary rounded-pill">AutoDesk Inventor</span>
+                  <span className="badge bg-primary rounded-pill">Git</span> <span className="badge bg-primary rounded-pill">GitHub</span> <span className="badge bg-success rounded-pill">Azure DevOps</span> <span className="badge bg-primary rounded-pill">Selenium</span> <span className="badge bg-danger rounded-pill">Minitab</span> <span className="badge bg-danger rounded-pill">Simio</span> <span className="badge bg-primary rounded-pill">Creo</span> <span className="badge bg-danger rounded-pill">Solidworks</span> <span className="badge bg-warning rounded-pill">AutoDesk Inventor</span>
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
@@ -185,6 +185,15 @@ function App() {
             </Fade>
           </div>
           
+          </div>
+        </div>
+        <div className="bg-warning">
+          <div className="container text-white">
+            <div className="py-5">
+            <Fade bottom>
+            <p className="display-3 fw-bold mt-5">here's where i worked</p>
+            </Fade>
+            </div>
           </div>
         </div>
     </>
