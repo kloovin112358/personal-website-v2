@@ -8,8 +8,11 @@ import Particles from "react-tsparticles";
 import Pulse from 'react-reveal/Pulse';
 import Jump from 'react-reveal/Jump';
 import Accordion from 'react-bootstrap/Accordion';
-import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
+import Tab from 'react-bootstrap/Tab';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -194,8 +197,8 @@ function App() {
           <div className="container text-white">
             <div className="py-5">
             <Fade bottom>
-              <p className="display-3 fw-bold mt-5">here's where i worked</p>
-              <VerticalTimeline className="mt-5" layout={'1-column-left'}>
+              <p className="display-3 fw-bold mt-5">here's where i work(ed)</p>
+              <VerticalTimeline className="mt-5 mb-5" layout={'1-column-left'}>
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work lead"
                   contentStyle={{ background: '#7209b7', color: '#fff' }}
@@ -207,7 +210,7 @@ function App() {
                   <h1 className="vertical-timeline-element-title"><strong>Software Development Intern, Web</strong></h1>
                   <h4 className="vertical-timeline-element-subtitle mt-2"><strong className="text-danger">Uline</strong> | Pleasant Prairie, WI</h4>
                   <p>
-                    Offer accepted, starting in late May.
+                    Offer accepted, starting in late May
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -221,7 +224,11 @@ function App() {
                   <h1 className="vertical-timeline-element-title"><strong>Web Developer</strong></h1>
                   <h4 className="vertical-timeline-element-subtitle mt-2"><strong className="text-danger">Caterpillar</strong> | East Peoria, IL</h4>
                   <p>
-                    TODO
+                    <ul>
+                      <li>Full-stack developer on internal website supporting 3 facilities</li>
+                      <li>Developed 15+ tools such as metrology lab software, manufacturing quality checklist systems, inventory tracking system</li>
+                      <li>Acted as programming lead of small team</li>
+                    </ul>
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -235,7 +242,11 @@ function App() {
                   <h1 className="vertical-timeline-element-title"><strong>Data Analytics Intern</strong></h1>
                   <h4 className="vertical-timeline-element-subtitle mt-2"><strong className="text-secondary">Caterpillar</strong> | Morton, IL</h4>
                   <p>
-                    TODO
+                    <ul>
+                      <li>Part-time intern on short-term data project</li>
+                      <li>Sought to understand part demand on deprecated parts and how to support machines using them</li>
+                      <li>Developed interactive Excel tool providing purchasing decision</li>
+                    </ul>
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -249,7 +260,10 @@ function App() {
                   <h1 className="vertical-timeline-element-title"><strong>Industrial Engineering Intern</strong></h1>
                   <h4 className="vertical-timeline-element-subtitle mt-2"><strong className="text-danger">Synergetic Industries</strong> | Morton, IL</h4>
                   <p>
-                    TODO
+                    <ul>
+                      <li>Processing and automation engineer at an engineering contracting firm</li>
+                      <li>Automated data entry and material pricing quotes, helped create quotes</li>
+                    </ul>
                   </p>
                 </VerticalTimelineElement>
               </VerticalTimeline>
@@ -258,10 +272,76 @@ function App() {
           </div>
         </div>
         <div className="bg-primary">
-          <div className="container text-white">
+          <div className="container">
             <div className="py-5">
             <Fade bottom>
-            <p className="display-3 fw-bold mt-5">here are some sites i made</p>
+            <p className="display-3 fw-bold mt-5 text-white">here are some sites i made</p>
+            <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+              <Row className="mt-5 align-items-stretch"> 
+                <Col sm={3}>
+                  <Nav variant="pills" className="flex-column display-7">
+                    <Nav.Item>
+                      <Nav.Link eventKey="first">Palabrio</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="second">Personal Website</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="third">Country Generator</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="fourth">Extension Quiz</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="fifth">Chess Opening Roulette</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="sixth">Company Template</Nav.Link>
+                    </Nav.Item>
+                  </Nav>
+                </Col>
+                <Col sm={9} className="bg-white rounded-3 p-4"> 
+                  <Tab.Content className="display-7 text-secondary">
+                    <Tab.Pane eventKey="first">
+                      <p> 
+                      My friend Emily Lucas and I created Palabrio, a small text-based party game. Think
+                      low-budget Jackbox games. Neither of us had any web experience, but the idea sounded fun. So, through YouTube and StackOverflow, we scrapped it together. Built on Node.
+                      </p><Button variant="danger" size="lg" href="http://www.palabr.io">Visit Site</Button>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="second">
+                    <p> 
+                    I wanted to learn some new front-end techniques, so I built this website. I learned some basic SASS for Bootstrap
+              customization, added in some fun animations, and ensured it is completely responsive. Built on React.
+                      </p>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="third">
+                    <p> 
+                    I created a fun data visualization tool showing any person's chance of being born in a given country, generating countries based on actual population data. Built with Flask and some simple CSV math 
+              served via AJAX, with data visualizations via Chart.JS.
+                      </p><Button variant="danger" size="lg" href="https://country-generator.herokuapp.com/">Visit Site</Button>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="fourth">
+                      <p>
+                      I made a small web app that tests your knowledge of file extensions. 
+                      File extensions used courtesy of <a href='https://www.file-extensions.org/'>file-extensions.org</a>. Built on React.
+                      </p><Button variant="danger" size="lg" href="https://extension-quiz.herokuapp.com/">Visit Site</Button>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="fifth">
+                    <p> 
+                    This is a random generator for chess openings in order to make your games less boring. 
+              Your moves are compared to an openings database, which gives you a real opening to play. Built on Flask and Flask SocketIO.
+                      </p><Button variant="danger" size="lg" href="https://chess-opening-roulette.herokuapp.com/">Visit Site</Button>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="sixth">
+                    <p> 
+                    I built a boilerplate company website template to work on my professional front-end design. 
+              The site contains a few pages that every software company website seems to have. Built on ASP.NET with Razor Pages.
+                      </p><Button variant="danger" size="lg" href="https://github.com/kloovin112358/company-sample">Visit Site</Button>
+                    </Tab.Pane>
+                  </Tab.Content>
+                </Col>
+              </Row>
+            </Tab.Container>
             </Fade>
             </div>
           </div>
@@ -280,38 +360,33 @@ function App() {
             <div className="py-5">
             <Fade bottom cascade>
             <p className="display-3 fw-bold mt-5 mb-4 text-white">here's where i went to school</p>
-            <div className="row pb-5">
-                <div class='col-md mb-md-0 mb-3'>
-                  <Card>
-                    <Card.Header>
-                    <div class='d-flex w-100 justify-content-between'>
-                      <h3>Bradley University</h3>
-                      <span class='lead'>2019 - 2022</span>
-                    </div>
-                    </Card.Header>
-                    <Card.Body className="lead">
-                    <span className="fw-bold">Degree</span>: Bachelor's of Science in Industrial Engineering, Supply Chain Analytics Concentration <u>(ABET Accredited)</u>
-                    <br></br><br></br>
-                    <span className="fw-bold">Organizations</span>: Disc Golf Club (president), Symphonic Orchestra, Symphonic Winds, Basketball Band, Table Tennis Club, Tennis Club
-                    <br></br><br></br>
-                    <span className="fw-bold">GPA</span>: 3.92
-                    </Card.Body>
-                  </Card>
-                </div>
-                <div class='col-md'>
-                  <Card>
-                    <Card.Header>
-                    <div class='d-flex w-100 justify-content-between'>
-                      <h3>Morton High School</h3>
-                      <span class='lead'>2015 - 2019</span>
-                    </div>
-                    </Card.Header>
-                    <Card.Body className="lead">
-                      It wasn't as dramatic as the movies.
-                    </Card.Body>
-                  </Card>
-                </div>
-              </div>
+            <VerticalTimeline className="mt-5" layout={'1-column-left'}>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work lead"
+                  contentStyle={{ background: '#4361ee', color: '#fff' }}
+                  contentArrowStyle={{ borderRight: '7px solid  #4361ee' }}
+                  date="2019 - 2022"
+                  iconStyle={{ background: '#4361ee', color: '#fff' }}
+                  // icon={<i className="bi bi-briefcase text-center"></i>}
+                >
+                  <h1 className="vertical-timeline-element-title"><strong>Bradley University</strong></h1>
+                  <h4 className="vertical-timeline-element-subtitle mt-2">Peoria, IL</h4>
+                  <p>
+                  Bachelor's of Science in Industrial Engineering, Supply Chain Analytics Concentration <u>(ABET Accredited)</u>
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work lead"
+                  contentStyle={{ background: '#3a0ca3', color: '#fff' }}
+                  contentArrowStyle={{ borderRight: '7px solid  #3a0ca3' }}
+                  date="2015 - 2019"
+                  iconStyle={{ background: '#3a0ca3', color: '#fff' }}
+                  // icon={<i className="bi bi-briefcase text-center"></i>}
+                >
+                  <h1 className="vertical-timeline-element-title"><strong>Morton High School</strong></h1>
+                  <h4 className="vertical-timeline-element-subtitle mt-2">Morton, IL</h4>
+                </VerticalTimelineElement>
+              </VerticalTimeline>
             </Fade>
             </div>
           </div>
@@ -321,13 +396,13 @@ function App() {
             <div className="py-5">
             <Fade bottom cascade>
               <p className="display-3 fw-bold mt-5">send me a fax</p>
-              <p className="display-6 mt-5">
+              <p className="display-7 mt-5">
                 <i class="bi bi-envelope-fill"></i> <a className="text-white" href='mailto:kevin.lauer2019@gmail.com'>kevin.lauer2019@gmail.com</a>
               </p>
-              <p className="display-6 mt-2">
+              <p className="display-7 mt-2">
                 <i class="bi bi-linkedin"></i> <a className="text-white" href='https://www.linkedin.com/in/ktlauer/'>ktlauer</a>
               </p>
-              <p className="display-6 mt-2 pb-5">
+              <p className="display-7 mt-2 pb-5">
                 <i class="bi bi-github"></i> <a className="text-white" href='https://github.com/kloovin112358'>kloovin112358</a>
               </p>
             </Fade>

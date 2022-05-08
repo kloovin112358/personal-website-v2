@@ -7,10 +7,21 @@ $theme-colors: (
 );
 $display-font-sizes: (
     0: 10rem,
+    7: 1.5rem,
 );
 $font-family-sans-serif: (
     "Open Sans", sans-serif
 );
+.nav-link.active {
+    color: white!important;
+    background-color: #4cc9f0!important;
+}
+.btn-danger {
+    color:white!important;
+}
+.nav-link {
+    color: #4cc9f0!important;
+}
 .badgeParagraph {
     line-height: 1.6;
 }
