@@ -351,6 +351,71 @@ function App() {
             <div className="py-5">
             <Fade bottom>
             <p className="display-3 fw-bold mt-5">here are some other things i did</p>
+            <div className='row mt-5'>
+              <div className='col-md mb-md-0 mb-3'>
+                <div className='card text-light bg-danger shadow-lg'>
+                  <div className='card-header'>
+                    <div className='d-flex w-100 justify-content-between'>
+                      <h3>Google Code Jam</h3>
+                      <span className='lead'>Mar. 2021 - Apr. 2021</span>
+                    </div>
+                  </div>
+                  <div className='card-body lead'>
+                    <a className='text-white' href='https://codingcompetitions.withgoogle.com/codejam'>Code Jam</a> is a worldwide programming competition put on by Google. Each round has a series
+                    of programming puzzles to be solved in a short amount of time. After many hours of practice, I passed the qualification round and got stumped in the next. Those questions are hard.
+                    <br></br><i>The competition made me a much better programmer, in terms of efficiency and coding basics.</i>
+                  </div>
+                </div>
+              </div>
+              <div className='col-md mb-md-0 mb-3'>
+                <div className='card text-light bg-primary shadow-lg'>
+                  <div className='card-header'>
+                    <div className='d-flex w-100 justify-content-between'>
+                      <h3>ASCM Case Competition</h3>
+                      <span className='lead'>Oct. 2020 - Feb. 2021</span>
+                    </div>
+                  </div>
+                  <div className='card-body lead'>
+                    The <a className='text-success' href='https://www.ascm.org/'>Association for Supply Chain Management</a> puts on a yearly worldwide supply chain case competition.
+                    In a team with 3 other students, I helped develop solutions for mock companies facing product quality and production issues. We competed in two rounds of the competition. 
+                    <br></br><i>I learned how to put together solutions when faced with broad problems lacking a single answer.</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='row mt-md-4 mt-0'>
+              <div className='col-md mb-md-0 mb-3'>
+                <div className='card text-white bg-warning shadow-lg'>
+                  <div className='card-header'>
+                    <div className='d-flex w-100 justify-content-between'>
+                      <h3>Bradley Disc Golf Club</h3>
+                      <span className='lead'>July 2021 - Current</span>
+                    </div>
+                  </div>
+                  <div className='card-body lead'>
+                    I am currently the president of the Bradley University Disc Golf Club. During the season, I run a weekly league for our 15+ members as well as managing the competitive club sport team.
+                    In October of 2021 I organized a collegiate disc golf tournament, <a className='text-danger' href='https://www.discgolfscene.com/tournaments/Brave_the_Midwest_Presented_by_Peoria_Frisbee_Club_2021'>Brave the Midwest</a>.
+                    Over 50 players came from 4 states. I also organize away tournaments for the team, including trips to Ohio and Missouri, and the National Collegiate Championships in North Carolina. 
+                    <br></br><i>I've learned how to navigate red tape, fill out the forms, ask for permission, and do things by the book. That, and I have learned how to be the person in charge.</i>
+                  </div>
+                </div>
+              </div>
+              <div className='col-md mb-md-0 mb-3'>
+                <div className='card text-light bg-info shadow-lg'>
+                  <div className='card-header'>
+                    <div className='d-flex w-100 justify-content-between'>
+                      <h3>Online Resale Business</h3>
+                      <span className='lead'>May 2016 - Mar. 2020</span>
+                    </div>
+                  </div>
+                  <div className='card-body lead'>
+                    I had a small side-hustle during the summers in high school. I bought and sold various items from garage sales, estate sales, government auctions, and anywhere else. 
+                    While it was a small operation, barely breaking 5 figures in revenue, I learned how to keep the books, take photos, create attractive listings, ship items, and 
+                    most of all, keep customers happy. This was all done on my own, with no outside help. <br></br><i>I learned how to be meticulous and how to apologize for my mistakes.</i>
+                  </div>
+                </div>
+              </div>
+            </div>
             </Fade>
             </div>
           </div>
@@ -397,13 +462,13 @@ function App() {
             <Fade bottom cascade>
               <p className="display-3 fw-bold mt-5">send me a fax</p>
               <p className="display-7 mt-5">
-                <i class="bi bi-envelope-fill"></i> <a className="text-white" href='mailto:kevin.lauer2019@gmail.com'>kevin.lauer2019@gmail.com</a>
+                <i className="bi bi-envelope-fill"></i> <a className="text-white" href='mailto:kevin.lauer2019@gmail.com'>kevin.lauer2019@gmail.com</a>
               </p>
               <p className="display-7 mt-2">
-                <i class="bi bi-linkedin"></i> <a className="text-white" href='https://www.linkedin.com/in/ktlauer/'>ktlauer</a>
+                <i className="bi bi-linkedin"></i> <a className="text-white" href='https://www.linkedin.com/in/ktlauer/'>ktlauer</a>
               </p>
               <p className="display-7 mt-2 pb-5">
-                <i class="bi bi-github"></i> <a className="text-white" href='https://github.com/kloovin112358'>kloovin112358</a>
+                <i className="bi bi-github"></i> <a className="text-white" href='https://github.com/kloovin112358'>kloovin112358</a>
               </p>
             </Fade>
             </div>
