@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import Fade from 'react-reveal/Fade';
 import Particles from "react-tsparticles";
 import Pulse from 'react-reveal/Pulse';
