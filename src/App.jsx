@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-import React from "react";
+import React, { Component } from "react";
 import Fade from 'react-reveal/Fade';
 import Particles from "react-tsparticles";
 import Pulse from 'react-reveal/Pulse';
@@ -16,6 +16,13 @@ import Button from 'react-bootstrap/Button';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
+// TODOS:
+// accordion is slow - replace with faster react Component
+// title page is boring
+// spacing is weird on mobile with headers and other things
+// more stationary animations
+// more svgs/maybe a timeline thing
+// things on "other things i did" are hard on the eyes
 
 function App() {
 
