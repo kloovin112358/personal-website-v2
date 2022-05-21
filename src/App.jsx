@@ -16,15 +16,12 @@ import Button from 'react-bootstrap/Button';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-// TODOS:
-// title page is boring
 // spacing is weird on mobile with headers and other things
-// more stationary animations
 // more svgs/maybe a timeline thing
-// things on "other things i did" are hard on the eyes
 
 function App() {
-
+  console.log("Please ignore all these warnings 😟")
+  console.log("Laziness got the best of me 💀")
   return (
     <>
       <Particles
@@ -81,7 +78,7 @@ function App() {
           <Fade left delay={2000}><br></br><br></br><br></br><p className="display-6">my name is</p></Fade>
           <p className="display-0 fw-bolder text-white">
             <Fade left delay={2900}>
-              <Pulse forever duration={7000}>Kevin Lauer</Pulse>
+              <Pulse forever duration={7000}>Kevin Lauer 🦙</Pulse>
             </Fade>
           </p>
           <Fade top delay={4500}><Jump forever delay={6500}><br></br><p className="display-5"><i className="bi bi-arrow-down-circle"></i></p></Jump></Fade>
@@ -102,27 +99,27 @@ function App() {
       </div>
       <div className="bg-secondary">
         <div className="container text-white">
-        <div className="py-5">
+        <div className="py-1 py-lg-5">
           <Fade bottom cascade>
-          <p className="display-1 fw-bold mt-5">i'm a full-stack software engineer</p>
-          <p className="display-4 text-success">so essentially i google things all day</p>
+          <p className="display-4 fw-bold mt-5">i'm a full-stack software engineer</p>
+          <p className="display-6 text-success">so essentially i google things all day</p>
           </Fade>
           <Fade bottom cascade>
-            <br></br><br></br><br></br><p className="display-1 fw-bold">i'm still in college</p>
-            <p className="display-4 text-success">but i'm graduating in december of 2022</p>
+            <br></br><br></br><br></br><p className="display-4 fw-bold">i'm still in college</p>
+            <p className="display-6 text-success">but i'm graduating in december of 2022</p>
           </Fade>
           <Fade bottom cascade>
-            <br></br><br></br><br></br><p className="display-1 fw-bold">so... hire me?</p>
-            <p className="display-4 text-success mb-5">no pressure, only if <i>you</i> want to</p>
+            <br></br><br></br><br></br><p className="display-4 fw-bold">so... hire me?</p>
+            <p className="display-6 text-success mb-5">or don't, it's up to you</p>
           </Fade>
         </div>
         </div>
       </div>
       <div className="bg-success">
         <div className="container text-white">
-          <div className="py-5">
+          <div className="py-1 py-lg-5">
           <Fade bottom cascade>
-            <p className="display-3 fw-bold mt-5 mb-4">here's what i can do</p>
+          <p className="display-3 fw-bold mt-5 mb-4">here's what i can do</p>
             <Accordion className="text-dark mb-5" defaultActiveKey={['0', '1', '2', '3']} alwaysOpen>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>Programming Languages</Accordion.Header>
@@ -130,25 +127,25 @@ function App() {
                   <ul className='list-group list-group-flush lead'>
                     <li className='list-group-item'>
                       <div className='d-flex w-100 justify-content-between'>
-                        <div className='fw-bold'>Python</div>
+                        <div className='fw-bold'>Python <i className="bi bi-filetype-py"></i></div>
                         <span className="badge bg-success rounded-pill">August 2019</span>
                       </div>
                     </li>
                     <li className='list-group-item'>
                       <div className='d-flex w-100 justify-content-between'>
-                        <div className='fw-bold'>JavaScript</div>
+                        <div className='fw-bold'>JavaScript <i className="bi bi-filetype-js"></i></div>
                         <span className="badge bg-success rounded-pill">September 2020</span>
                       </div>
                     </li>
                     <li className='list-group-item'>
                       <div className='d-flex w-100 justify-content-between'>
-                        <div className='fw-bold'>Java</div>
+                        <div className='fw-bold'>Java <i className="bi bi-filetype-java"></i></div>
                         <span className="badge bg-primary rounded-pill">August 2021</span>
                       </div>
                     </li>
                     <li className='list-group-item'>
                       <div className='d-flex w-100 justify-content-between'>
-                        <div className='fw-bold'>Excel VBA</div>
+                        <div className='fw-bold'>Excel VBA <i className="bi bi-file-earmark-excel"></i></div>
                         <span className="badge bg-warning rounded-pill">January 2020</span>
                       </div>
                     </li>
@@ -160,10 +157,10 @@ function App() {
                 <Accordion.Body bsPrefix={"accordionReset"}>
                   <ul className='list-group list-group-flush lead'>
                     <li className='list-group-item'>
-                      <span className='fw-bold'>Backend:</span> <span className="badge bg-success rounded-pill">Django</span> <span className="badge bg-warning rounded-pill">Django REST Framework</span> <span className="badge bg-success rounded-pill">Flask</span> <span className="badge bg-primary rounded-pill">Node.JS</span> <span className="badge bg-danger rounded-pill">Spring Boot</span> <span className="badge bg-danger rounded-pill">ASP.NET</span>
+                      <span className='fw-bold'>Backend:</span> <span className="badge bg-success rounded-pill">Django <i className="bi bi-filetype-py"></i></span> <span className="badge bg-warning rounded-pill">Django REST Framework <i className="bi bi-filetype-py"></i></span> <span className="badge bg-success rounded-pill">Flask <i className="bi bi-filetype-py"></i></span> <span className="badge bg-primary rounded-pill">Node.JS <i className="bi bi-filetype-js"></i></span> <span className="badge bg-danger rounded-pill">Spring Boot <i className="bi bi-filetype-java"></i></span> <span className="badge bg-danger rounded-pill">ASP.NET <i className="bi bi-filetype-cs"></i></span>
                     </li>
                     <li className='list-group-item'>
-                      <span className='fw-bold'>Frontend:</span> <span className="badge bg-success rounded-pill">React</span> <span className="badge bg-success rounded-pill">HTML</span> <span className="badge bg-success rounded-pill">CSS</span> <span className="badge bg-warning rounded-pill">SASS</span> <span className="badge bg-success rounded-pill">Bootstrap</span> <span className="badge bg-success rounded-pill">JQuery</span> <span className="badge bg-success rounded-pill">AJAX</span> <span className="badge bg-danger rounded-pill">Chart.JS</span>
+                      <span className='fw-bold'>Frontend:</span> <span className="badge bg-success rounded-pill">React <i className="bi bi-filetype-jsx"></i></span> <span className="badge bg-success rounded-pill">HTML <i className="bi bi-filetype-html"></i></span> <span className="badge bg-success rounded-pill">CSS <i className="bi bi-filetype-css"></i></span> <span className="badge bg-warning rounded-pill">SASS <i className="bi bi-filetype-sass"></i></span> <span className="badge bg-success rounded-pill">Bootstrap <i className="bi bi-bootstrap"></i></span> <span className="badge bg-success rounded-pill">JQuery</span> <span className="badge bg-success rounded-pill">AJAX</span> <span className="badge bg-danger rounded-pill">Chart.JS</span>
                     </li>
                     <li className='list-group-item'>
                       <span className='fw-bold'>Miscellaneous:</span> <span className="badge bg-primary rounded-pill">Heroku</span> <span className="badge bg-danger rounded-pill">Apache</span> <span className="badge bg-warning rounded-pill">REST APIs</span> <span className="badge bg-warning rounded-pill">WebSockets</span>
@@ -176,10 +173,10 @@ function App() {
                 <Accordion.Body bsPrefix={"accordionReset"}>
                   <ul className='list-group list-group-flush lead'>
                     <li className='list-group-item'>
-                      <span className='fw-bold'>Databases:</span> <span className="badge bg-success rounded-pill">PostgreSQL</span> <span className="badge bg-warning rounded-pill">Access</span> <span className="badge bg-warning rounded-pill">Snowflake</span>
+                      <span className='fw-bold'>Databases:</span> <span className="badge bg-success rounded-pill">PostgreSQL</span> <span className="badge bg-warning rounded-pill">Access <i className="bi bi-server"></i></span> <span className="badge bg-warning rounded-pill">Snowflake <i className="bi bi-snow"></i></span>
                     </li>
                     <li className='list-group-item'>
-                      <span className='fw-bold'>Tools:</span> <span className="badge bg-warning rounded-pill">SQL</span> <span className="badge bg-primary rounded-pill">Excel</span> <span className="badge bg-warning rounded-pill">PowerBI</span>
+                      <span className='fw-bold'>Tools:</span> <span className="badge bg-warning rounded-pill">SQL</span> <span className="badge bg-primary rounded-pill">Excel <i className="bi bi-file-earmark-excel"></i></span> <span className="badge bg-warning rounded-pill">PowerBI <i className="bi bi-file-bar-graph"></i></span>
                     </li>
                   </ul>
                 </Accordion.Body>
@@ -189,7 +186,7 @@ function App() {
                 <Accordion.Body>
                   
                 <div className='lead'>
-                  <span className="badge bg-primary rounded-pill">Git</span> <span className="badge bg-primary rounded-pill">GitHub</span> <span className="badge bg-success rounded-pill">Azure DevOps</span> <span className="badge bg-primary rounded-pill">Selenium</span> <span className="badge bg-danger rounded-pill">Minitab</span> <span className="badge bg-danger rounded-pill">Simio</span> <span className="badge bg-primary rounded-pill">Creo</span> <span className="badge bg-danger rounded-pill">Solidworks</span> <span className="badge bg-warning rounded-pill">AutoDesk Inventor</span>
+                  <span className="badge bg-primary rounded-pill">Git <i className="bi bi-git"></i></span> <span className="badge bg-primary rounded-pill">GitHub <i className="bi bi-github"></i></span> <span className="badge bg-success rounded-pill">Azure DevOps</span> <span className="badge bg-primary rounded-pill">Selenium</span> <span className="badge bg-danger rounded-pill">Minitab</span> <span className="badge bg-danger rounded-pill">Simio</span> <span className="badge bg-primary rounded-pill">Creo</span> <span className="badge bg-danger rounded-pill">Solidworks</span> <span className="badge bg-warning rounded-pill">AutoDesk Inventor</span>
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
@@ -201,7 +198,7 @@ function App() {
         </div>
         <div className="bg-warning">
           <div className="container text-white">
-            <div className="py-5">
+            <div className="py-1 py-lg-5">
             <Fade bottom>
               <p className="display-3 fw-bold mt-5">here's where i work(ed)</p>
               <VerticalTimeline className="mt-5 mb-5" layout={'1-column-left'}>
@@ -213,7 +210,7 @@ function App() {
                   iconStyle={{ background: '#7209b7', color: '#fff' }}
                   // icon={<i className="bi bi-briefcase text-center"></i>}
                 >
-                  <h1 className="vertical-timeline-element-title"><strong>Software Development Intern, Web</strong></h1>
+                  <h1 className="vertical-timeline-element-title"><strong>Software Development Intern</strong></h1>
                   <h4 className="vertical-timeline-element-subtitle mt-2"><strong className="text-danger">Uline</strong> | Pleasant Prairie, WI</h4>
                   <p>
                     Offer accepted, starting in late May
@@ -279,11 +276,11 @@ function App() {
         </div>
         <div className="bg-primary">
           <div className="container">
-            <div className="py-5">
+            <div className="pb-5 pt-1 pt-lg-5">
             <Fade bottom>
             <p className="display-3 fw-bold mt-5 text-white">here are some sites i made</p>
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-              <Row className="mt-5 align-items-stretch"> 
+              <Row className="mt-2 mb-2 mb-lg-5 mt-lg-5 align-items-stretch"> 
                 <Col sm={3}>
                   <Nav variant="pills" className="flex-column display-7">
                     <Nav.Item>
@@ -306,7 +303,7 @@ function App() {
                     </Nav.Item>
                   </Nav>
                 </Col>
-                <Col sm={9} className="bg-white rounded-3 p-4"> 
+                <Col sm={9} className="mt-2 mt-lg-0 bg-white rounded-3 p-4"> 
                   <Tab.Content className="display-7 text-secondary">
                     <Tab.Pane eventKey="first">
                       <p> 
@@ -354,12 +351,12 @@ function App() {
         </div>
         <div className="bg-secondary">
           <div className="container text-white">
-            <div className="py-5">
+            <div className="py-1 py-lg-5">
             <Fade bottom>
             <p className="display-3 fw-bold mt-5">here are some other things i did</p>
             <div className='row mt-5'>
               <div className='col-md mb-md-0 mb-3'>
-                <div className='card text-light bg-danger shadow-lg'>
+                <div className='card text-secondary bg-white shadow-lg'>
                   <div className='card-header'>
                     <div className='d-flex w-100 justify-content-between'>
                       <h3>Google Code Jam</h3>
@@ -367,7 +364,7 @@ function App() {
                     </div>
                   </div>
                   <div className='card-body lead'>
-                    <a className='text-white' href='https://codingcompetitions.withgoogle.com/codejam'>Code Jam</a> is a worldwide programming competition put on by Google. Each round has a series
+                    <a className='text-danger' href='https://codingcompetitions.withgoogle.com/codejam'>Code Jam</a> is a worldwide programming competition put on by Google. Each round has a series
                     of programming puzzles to be solved in a short amount of time. After many hours of practice, I passed the qualification round and got stumped in the next. Those questions are hard.
                     <br></br><i>The competition made me a much better programmer, in terms of efficiency and coding basics.</i>
                   </div>
@@ -389,7 +386,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className='row mt-md-4 mt-0'>
+            <div className='row mt-md-4 mt-0 mb-5'>
               <div className='col-md mb-md-0 mb-3'>
                 <div className='card text-white bg-warning shadow-lg'>
                   <div className='card-header'>
@@ -400,7 +397,7 @@ function App() {
                   </div>
                   <div className='card-body lead'>
                     I am currently the president of the Bradley University Disc Golf Club. During the season, I run a weekly league for our 15+ members as well as managing the competitive club sport team.
-                    In October of 2021 I organized a collegiate disc golf tournament, <a className='text-danger' href='https://www.discgolfscene.com/tournaments/Brave_the_Midwest_Presented_by_Peoria_Frisbee_Club_2021'>Brave the Midwest</a>.
+                    In October of 2021 I organized a collegiate disc golf tournament, <a className='text-success' href='https://www.discgolfscene.com/tournaments/Brave_the_Midwest_Presented_by_Peoria_Frisbee_Club_2021'>Brave the Midwest</a>.
                     Over 50 players came from 4 states. I also organize away tournaments for the team, including trips to Ohio and Missouri, and the National Collegiate Championships in North Carolina. 
                     <br></br><i>I've learned how to navigate red tape, fill out the forms, ask for permission, and do things by the book. That, and I have learned how to be the person in charge.</i>
                   </div>
@@ -428,17 +425,16 @@ function App() {
         </div>
         <div className="bg-success">
           <div className="container">
-            <div className="py-5">
+            <div className="py-1 py-lg-5">
             <Fade bottom cascade>
             <p className="display-3 fw-bold mt-5 mb-4 text-white">here's where i went to school</p>
-            <VerticalTimeline className="mt-5" layout={'1-column-left'}>
+            <VerticalTimeline className="mt-5 mb-5 mb-lg-0" layout={'1-column-left'}>
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work lead"
                   contentStyle={{ background: '#4361ee', color: '#fff' }}
                   contentArrowStyle={{ borderRight: '7px solid  #4361ee' }}
                   date="2019 - 2022"
                   iconStyle={{ background: '#4361ee', color: '#fff' }}
-                  // icon={<i className="bi bi-briefcase text-center"></i>}
                 >
                   <h1 className="vertical-timeline-element-title"><strong>Bradley University</strong></h1>
                   <h4 className="vertical-timeline-element-subtitle mt-2">Peoria, IL</h4>
@@ -464,7 +460,7 @@ function App() {
         </div>
         <div className="bg-primary">
           <div className="container text-white">
-            <div className="py-5">
+            <div className="py-1 py-lg-5">
             <Fade bottom cascade>
               <p className="display-3 fw-bold mt-5">send me a fax</p>
               <p className="display-7 mt-5">
