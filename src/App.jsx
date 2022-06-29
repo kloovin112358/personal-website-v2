@@ -234,7 +234,7 @@ function App() {
                   <h4 className="vertical-timeline-element-subtitle mt-2"><strong className="text-danger">Uline</strong> | Pleasant Prairie, WI</h4>
                   <p>
                     <ul>
-                      <li>Full-stack developer on <a href="http://www.uline.com/" className="text-danger">Uline.com</a>, a high-traffic e-commerce site based on microservices</li>
+                      <li>Full-stack development intern on <a href="http://www.uline.com/" className="text-danger">Uline.com</a>, a high-traffic e-commerce site based on microservices</li>
                       <li>Utilizes ASP.NET and TypeScript on a small scrum team, developing enhancements and bug fixes</li>
                     </ul>
                   </p>
