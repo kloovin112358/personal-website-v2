@@ -120,6 +120,14 @@ function App() {
           <div className="py-1 py-lg-5">
           <Fade bottom cascade>
           <p className="display-3 fw-bold mt-5 mb-4">here's what i can do</p>
+          <div className='card shadow-lg mb-2'>
+            <div className='card-body'>
+              <span className="badge bg-success rounded-pill mx-1 fw-bold">Expert</span>
+              <span className="badge bg-warning rounded-pill mx-1">Advanced</span>
+              <span className="badge bg-primary rounded-pill mx-1">Intermediate</span>
+              <span className="badge bg-danger rounded-pill mx-1">Beginner</span>
+            </div>
+          </div>
             <Accordion className="text-dark mb-5" defaultActiveKey={['0', '1', '2', '3']} alwaysOpen>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>Programming Languages</Accordion.Header>
@@ -133,14 +141,26 @@ function App() {
                     </li>
                     <li className='list-group-item'>
                       <div className='d-flex w-100 justify-content-between'>
-                        <div className='fw-bold'>JavaScript <i className="bi bi-filetype-js"></i></div>
-                        <span className="badge bg-success rounded-pill">September 2020</span>
+                        <div className='fw-bold'>C# <i className="bi bi-filetype-cs"></i></div>
+                        <span className="badge bg-warning rounded-pill">May 2022</span>
                       </div>
                     </li>
                     <li className='list-group-item'>
                       <div className='d-flex w-100 justify-content-between'>
                         <div className='fw-bold'>Java <i className="bi bi-filetype-java"></i></div>
                         <span className="badge bg-primary rounded-pill">August 2021</span>
+                      </div>
+                    </li>
+                    <li className='list-group-item'>
+                      <div className='d-flex w-100 justify-content-between'>
+                        <div className='fw-bold'>JavaScript <i className="bi bi-filetype-js"></i></div>
+                        <span className="badge bg-success rounded-pill">September 2020</span>
+                      </div>
+                    </li>
+                    <li className='list-group-item'>
+                      <div className='d-flex w-100 justify-content-between'>
+                        <div className='fw-bold'>TypeScript <i className="bi bi-filetype-tsx"></i></div>
+                        <span className="badge bg-primary rounded-pill">May 2022</span>
                       </div>
                     </li>
                     <li className='list-group-item'>
@@ -157,7 +177,7 @@ function App() {
                 <Accordion.Body bsPrefix={"accordionReset"}>
                   <ul className='list-group list-group-flush lead'>
                     <li className='list-group-item'>
-                      <span className='fw-bold'>Backend:</span> <span className="badge bg-success rounded-pill">Django <i className="bi bi-filetype-py"></i></span> <span className="badge bg-warning rounded-pill">Django REST Framework <i className="bi bi-filetype-py"></i></span> <span className="badge bg-success rounded-pill">Flask <i className="bi bi-filetype-py"></i></span> <span className="badge bg-primary rounded-pill">Node.JS <i className="bi bi-filetype-js"></i></span> <span className="badge bg-danger rounded-pill">Spring Boot <i className="bi bi-filetype-java"></i></span> <span className="badge bg-danger rounded-pill">ASP.NET <i className="bi bi-filetype-cs"></i></span>
+                      <span className='fw-bold'>Backend:</span> <span className="badge bg-success rounded-pill">Django <i className="bi bi-filetype-py"></i></span> <span className="badge bg-warning rounded-pill">ASP.NET <i className="bi bi-filetype-cs"></i></span> <span className="badge bg-success rounded-pill">Flask <i className="bi bi-filetype-py"></i></span> <span className="badge bg-warning rounded-pill">Node.JS <i className="bi bi-filetype-js"></i></span> <span className="badge bg-danger rounded-pill">Spring Boot <i className="bi bi-filetype-java"></i></span> <span className="badge bg-primary rounded-pill">Django REST Framework <i className="bi bi-filetype-py"></i></span>
                     </li>
                     <li className='list-group-item'>
                       <span className='fw-bold'>Frontend:</span> <span className="badge bg-success rounded-pill">React <i className="bi bi-filetype-jsx"></i></span> <span className="badge bg-success rounded-pill">HTML <i className="bi bi-filetype-html"></i></span> <span className="badge bg-success rounded-pill">CSS <i className="bi bi-filetype-css"></i></span> <span className="badge bg-warning rounded-pill">SASS <i className="bi bi-filetype-sass"></i></span> <span className="badge bg-success rounded-pill">Bootstrap <i className="bi bi-bootstrap"></i></span> <span className="badge bg-success rounded-pill">JQuery</span> <span className="badge bg-success rounded-pill">AJAX</span> <span className="badge bg-danger rounded-pill">Chart.JS</span>
@@ -173,10 +193,10 @@ function App() {
                 <Accordion.Body bsPrefix={"accordionReset"}>
                   <ul className='list-group list-group-flush lead'>
                     <li className='list-group-item'>
-                      <span className='fw-bold'>Databases:</span> <span className="badge bg-success rounded-pill">PostgreSQL</span> <span className="badge bg-warning rounded-pill">Access <i className="bi bi-server"></i></span> <span className="badge bg-warning rounded-pill">Snowflake <i className="bi bi-snow"></i></span>
+                      <span className='fw-bold'>Databases:</span> <span className="badge bg-success rounded-pill">PostgreSQL</span> <span className="badge bg-primary rounded-pill">Access <i className="bi bi-server"></i></span> <span className="badge bg-danger rounded-pill">Snowflake <i className="bi bi-snow"></i></span> <span className="badge bg-danger rounded-pill">DataStax</span>
                     </li>
                     <li className='list-group-item'>
-                      <span className='fw-bold'>Tools:</span> <span className="badge bg-warning rounded-pill">SQL</span> <span className="badge bg-primary rounded-pill">Excel <i className="bi bi-file-earmark-excel"></i></span> <span className="badge bg-warning rounded-pill">PowerBI <i className="bi bi-file-bar-graph"></i></span>
+                      <span className='fw-bold'>Tools:</span> <span className="badge bg-primary rounded-pill">SQL</span> <span className="badge bg-warning rounded-pill">Excel <i className="bi bi-file-earmark-excel"></i></span> <span className="badge bg-primary rounded-pill">PowerBI <i className="bi bi-file-bar-graph"></i></span>
                     </li>
                   </ul>
                 </Accordion.Body>
@@ -186,7 +206,7 @@ function App() {
                 <Accordion.Body>
                   
                 <div className='lead'>
-                  <span className="badge bg-primary rounded-pill">Git <i className="bi bi-git"></i></span> <span className="badge bg-primary rounded-pill">GitHub <i className="bi bi-github"></i></span> <span className="badge bg-success rounded-pill">Azure DevOps</span> <span className="badge bg-primary rounded-pill">Selenium</span> <span className="badge bg-danger rounded-pill">Minitab</span> <span className="badge bg-danger rounded-pill">Simio</span> <span className="badge bg-primary rounded-pill">Creo</span> <span className="badge bg-danger rounded-pill">Solidworks</span> <span className="badge bg-warning rounded-pill">AutoDesk Inventor</span>
+                  <span className="badge bg-warning rounded-pill">Git <i className="bi bi-git"></i></span> <span className="badge bg-primary rounded-pill">GitHub <i className="bi bi-github"></i></span> <span className="badge bg-danger rounded-pill">Jenkins</span> <span className="badge bg-primary rounded-pill">SonarQube</span> <span className="badge bg-success rounded-pill">Azure DevOps</span> <span className="badge bg-primary rounded-pill">Selenium</span> <span className="badge bg-danger rounded-pill">Minitab</span> <span className="badge bg-danger rounded-pill">Simio</span> <span className="badge bg-primary rounded-pill">Creo</span> <span className="badge bg-danger rounded-pill">Solidworks</span> <span className="badge bg-warning rounded-pill">AutoDesk Inventor</span>
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
@@ -213,7 +233,10 @@ function App() {
                   <h1 className="vertical-timeline-element-title"><strong>Software Development Intern</strong></h1>
                   <h4 className="vertical-timeline-element-subtitle mt-2"><strong className="text-danger">Uline</strong> | Pleasant Prairie, WI</h4>
                   <p>
-                    Offer accepted, starting in late May
+                    <ul>
+                      <li>Full-stack developer on <a href="http://www.uline.com/" className="text-danger">Uline.com</a>, a high-traffic e-commerce site based on microservices</li>
+                      <li>Utilizes ASP.NET and TypeScript on a small scrum team, developing enhancements and bug fixes</li>
+                    </ul>
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
