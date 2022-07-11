@@ -28,12 +28,6 @@ function App() {
         id="tsparticles"
         options={{
           fpsLimit: 120,
-          // interactivity: {
-          //   detect_on: "canvas",
-          //   modes: {
-          //     attract: { distance: 200, duration: 0.4, factor: 5 }
-          //   }
-          // },
           particles: {
             color: {
               value: "#ffffff",
@@ -82,33 +76,21 @@ function App() {
             </Fade>
           </p>
           <Fade top delay={4500}><Jump forever delay={6500}><br></br><p className="display-5"><i className="bi bi-arrow-down-circle"></i></p></Jump></Fade>
-          {/* <Fade left delay={3500}><p className="display-6 badgeParagraph">
-            and boy do I have the opportunity for you!
-            i created a
-            <Roll delay={4000}><span className="badge bg-warning mx-2">blockchain</span></Roll>
-            <Roll delay={4500}><span className="badge bg-danger mx-2">machine-learning</span></Roll>
-            <Roll delay={5000}><span className="badge bg-success mx-2">sustainable energy</span></Roll>
-            <Roll delay={5500}><span className="badge bg-secondary mx-2">artificial intelligence</span></Roll>
-            <Roll delay={6000}><span className="badge bg-danger mx-2">bitcoin</span></Roll>
-            <Roll delay={6500}><span className="badge bg-warning mx-2">microtransaction</span></Roll>
-            <Roll delay={7000}><span className="badge bg-dark mx-2">real-estate</span></Roll>
-            <Roll delay={7500}><span className="badge bg-secondary mx-2">course</span></Roll>
-          </p></Fade> */}
         </div>
       </div>
       </div>
       <div className="bg-secondary">
         <div className="container text-white">
         <div className="py-1 py-lg-5">
-          <Fade bottom cascade>
-          <p className="display-4 fw-bold mt-5">i'm a full-stack software engineer</p>
-          <p className="display-6 text-success">so essentially i google things all day</p>
+          <Fade bottom >
+            <p className="display-4 fw-bold mt-5">i'm a full-stack software engineer</p>
+            <p className="display-6 text-success">so essentially i google things all day</p>
           </Fade>
-          <Fade bottom cascade>
+          <Fade bottom >
             <br></br><br></br><br></br><p className="display-4 fw-bold">i'm still in college</p>
             <p className="display-6 text-success">but i'm graduating in december of 2022</p>
           </Fade>
-          <Fade bottom cascade>
+          <Fade bottom >
             <br></br><br></br><br></br><p className="display-4 fw-bold">so... hire me?</p>
             <p className="display-6 text-success mb-5">or don't, it's up to you</p>
           </Fade>
@@ -120,6 +102,7 @@ function App() {
           <div className="py-1 py-lg-5">
           <Fade bottom cascade>
           <p className="display-3 fw-bold mt-5 mb-4">here's what i can do</p>
+          <div>
           <div className='card shadow-lg mb-2'>
             <div className='card-body'>
               <span className="badge bg-success rounded-pill mx-1 fw-bold">Expert</span>
@@ -127,7 +110,7 @@ function App() {
               <span className="badge bg-primary rounded-pill mx-1">Intermediate</span>
               <span className="badge bg-danger rounded-pill mx-1">Beginner</span>
             </div>
-          </div>
+          </div></div>
             <Accordion className="text-dark mb-5" defaultActiveKey={['0', '1', '2', '3']} alwaysOpen>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>Programming Languages</Accordion.Header>
