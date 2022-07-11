@@ -101,7 +101,7 @@ function App() {
         <div className="container text-white">
           <div className="py-1 py-lg-5">
           <Fade bottom>
-          <p className="display-3 fw-bold mt-5 mb-4">here's what i can do</p>
+          <p className="display-3 fw-bold mt-5 mb-5">here's what i can do</p>
           <div>
           <div className='card shadow-lg mb-2'>
             <div className='card-body'>
