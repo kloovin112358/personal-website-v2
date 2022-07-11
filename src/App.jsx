@@ -100,7 +100,7 @@ function App() {
       <div className="bg-success">
         <div className="container text-white">
           <div className="py-1 py-lg-5">
-          <Fade bottom cascade>
+          <Fade bottom>
           <p className="display-3 fw-bold mt-5 mb-4">here's what i can do</p>
           <div>
           <div className='card shadow-lg mb-2'>
@@ -432,7 +432,7 @@ function App() {
         <div className="bg-success">
           <div className="container">
             <div className="py-1 py-lg-5">
-            <Fade bottom cascade>
+            <Fade bottom>
             <p className="display-3 fw-bold mt-5 mb-4 text-white">here's where i went to school</p>
             <VerticalTimeline className="mt-5 mb-5 mb-lg-0" layout={'1-column-left'}>
                 <VerticalTimelineElement
@@ -467,7 +467,7 @@ function App() {
         <div className="bg-primary">
           <div className="container text-white">
             <div className="py-1 py-lg-5">
-            <Fade bottom cascade>
+            <Fade bottom>
               <p className="display-3 fw-bold mt-5">send me a fax</p>
               <p className="display-7 mt-5">
                 <i className="bi bi-envelope-fill"></i> <a className="text-white" href='mailto:kevin.lauer2019@gmail.com'>kevin.lauer2019@gmail.com</a>
