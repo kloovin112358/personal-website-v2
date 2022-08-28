@@ -218,7 +218,8 @@ function App() {
                   <p>
                     <ul>
                       <li>Full-stack development intern on <a href="http://www.uline.com/" className="text-danger">Uline.com</a>, a high-traffic e-commerce site based on microservices</li>
-                      <li>Utilizes ASP.NET and TypeScript on a small scrum team, developing enhancements and bug fixes</li>
+                      <li>Utilized ASP.NET, TypeScript, and Spring on a small scrum team, developing and unit testing enhancements and bug fixes according to business needs</li>
+                      <li>Took leadership on multiple intern side projects, revamping an outdated site for custom product vendors and cleaning up old SQL files</li>
                     </ul>
                   </p>
                 </VerticalTimelineElement>
